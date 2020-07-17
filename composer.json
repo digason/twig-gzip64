@@ -1,0 +1,22 @@
+{
+    "name": "digason/twig-gzip64",
+    "type": "library",
+    "description": "Gzip/Base64 encode a string.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Northrup",
+            "email": "digason@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "twig/twig": "^1.28 || ^2.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": { "Digason\\Twig\\Extension\\": "src/Digason/Twig/Extension/" }
+    }
+}
