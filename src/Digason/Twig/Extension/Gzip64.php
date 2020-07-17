@@ -5,7 +5,7 @@ namespace Digason\Twig\Extension;
 use Twig_Extension;
 use Twig_SimpleFunction;
 
-class PhpFunctionExtension extends Twig_Extension
+class Gzip64 extends Twig_Extension
 {
 	public function getFilters() {
 		return [
