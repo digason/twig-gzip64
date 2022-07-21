@@ -2,15 +2,15 @@
 
 namespace Digason\Twig\Extension;
 
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
-class Gzip64 extends Twig_Extension
+class Gzip64 extends AbstractExtension
 {
 	public function getFilters() {
 		return [
-		new \Twig_SimpleFilter('gzip64', [$this, 'gzip64']),
-		new \Twig_SimpleFilter('gunzip64', [$this, 'gunzip64']),
+		new TwigFilter('gzip64', [$this, 'gzip64']),
+		new TwigFilter('gunzip64', [$this, 'gunzip64']),
 		];
 	}
 
@@ -19,7 +19,7 @@ class Gzip64 extends Twig_Extension
 	}
 
 	public function gunzip64($input) {
-		return gzuncompress(base64_dencode($input));
+		return gzuncompress(base64_decode($input));
 	}
 
 
