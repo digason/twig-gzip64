@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.0 || ^8.0",
-        "twig/twig": "^1.28 || ^2.0"
+        "twig/twig": "^1.28 || ^2.0 || ^3.0"
     },
     "config": {
         "bin-dir": "bin"
